@@ -6,11 +6,13 @@ import IdeasPage from './pages/IdeasPage';
 import CollaborationPage from './pages/CollaborationPage';
 import FeedbackPage from './pages/FeedbackPage';
 import AdminPage from './pages/AdminPage';
+import HomePage from './pages/HomePage';
 
 export const App = () => {
   return (
     <Router>
       <Routes>
+      <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/ideas" element={<IdeasPage />} />
         <Route path="/collaborate" element={<CollaborationPage />} />
