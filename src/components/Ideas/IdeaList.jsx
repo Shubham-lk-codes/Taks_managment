@@ -11,7 +11,7 @@ const IdeaList = () => {
   useEffect(() => {
     const fetchIdeas = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/ideas');
+        const response = await axios.get('http://localhost:4000/api/ideas');
         setIdeas(response.data);
         setLoading(false);
       } catch (error) {
@@ -40,7 +40,7 @@ const IdeaList = () => {
   }
 
   return (
-    <div className="max-w-4xl mx-auto bg-white p-6 shadow-md rounded-lg bg-gradient-to-r from-green-300 to-blue-500 text-white">
+    <div className="max-w-4xl mx-auto bg-white p-6 shadow-md rounded-lg bg-gradient-to-r from-green-300 to-blue-500 text-black">
       <h1 className="text-2xl font-bold mb-6 text-gray-800">Submitted Ideas</h1>
       <ul className="space-y-6">
         {ideas.map((idea) => (

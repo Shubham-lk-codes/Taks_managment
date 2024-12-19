@@ -24,7 +24,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 p-8">
+    <div className="min-h-screen bg-gray-100 p-8 bg-gradient-to-r from-blue-500 to-green-500">
       <header className="mb-8 text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Team Overview</h1>
         <p className="text-lg text-gray-600">

@@ -14,7 +14,7 @@ const SubmitIdea = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/api/ideas', {
+      const response = await axios.post('http://localhost:4000/api/ideas', {
         title,
         description,
         employeeId: '12345', // Example employeeId; replace with actual data if available
@@ -35,14 +35,14 @@ const SubmitIdea = () => {
       <h1 className="text-3xl font-bold text-gray-800 mb-6 text-center">Submit Your Innovative Idea</h1>
       <div className="space-y-4">
         <input
-          className="w-full p-3 border rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
+          className="w-full p-3 text-black border rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
           type="text"
           placeholder="Enter a captivating idea title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <textarea
-          className="w-full p-3 border rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300"
+          className="w-full p-3 border rounded-lg focus:outline-none focus:ring-4 text-black focus:ring-blue-300"
           placeholder="Provide a detailed description of your idea"
           value={description}
           onChange={(e) => setDescription(e.target.value)}

@@ -4,7 +4,7 @@ import Chat from '../components/Chat'; // Import Chat component
 
 const CollaborationPage = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-green-500 bg-gray-100">
       <header className="text-center mb-8">
         <h1 className="text-4xl font-extrabold text-gray-800 mb-4">Collaboration Hub</h1>
         <p className="text-lg text-gray-600">
