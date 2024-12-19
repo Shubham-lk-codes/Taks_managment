@@ -11,7 +11,7 @@ const IdeaList = () => {
   useEffect(() => {
     const fetchIdeas = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/api/ideas');
+        const response = await axios.get('https://taks-managment-backend.onrender.com/api/ideas');
         setIdeas(response.data);
         setLoading(false);
       } catch (error) {
