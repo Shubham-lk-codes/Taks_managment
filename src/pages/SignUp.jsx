@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
   const [email, setEmail] = useState('');
@@ -55,9 +55,12 @@ const SignUp = () => {
         </div>
         <p className="text-center text-sm text-gray-600 mt-4">
           Already have an account?{' '}
-          <a href="/login" className="text-blue-500 hover:underline">
-            Log in
-          </a>
+          <Link
+                  to="/login"
+                  className="transform bg-blue-600 hover:bg-blue-700 text-white font-semibold py-1 px-6 rounded-lg shadow-lg hover:scale-105 transition duration-300"
+                >
+                  Login
+                </Link>
         </p>
       </div>
       <footer className="mt-10 text-sm text-gray-200">
