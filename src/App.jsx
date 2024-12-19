@@ -10,7 +10,8 @@ import HomePage from "./pages/HomePage";
 import Dashboard from "./pages/Dashboard";
 import Chat from "./components/Chat"; 
 import AuditPage from "./pages/AuditPage";
-import Team from "./components/Team";// Import the Chat component
+import Team from "./components/Team";
+import SignUp from "./pages/SignUp";
 
 export const App = () => {
   return (
@@ -18,6 +19,7 @@ export const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
+        <Route path="/signup" element={<SignUp />} />
         <Route path="/ideas" element={<IdeasPage />} />
         <Route path="/collaborate" element={<CollaborationPage />} />
         <Route path="/feedback" element={<FeedbackPage />} />
