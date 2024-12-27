@@ -14,7 +14,7 @@ const SubmitIdea = () => {
     }
 
     try {
-      const response = await axios.post('https://taks-managment-backend.onrender.com/api/ideas', {
+      const response = await axios.post('https://taks-managment-backend-1.onrender.com/api/ideas', {
         title,
         description,
         employeeId: '12345', // Example employeeId; replace with actual data if available

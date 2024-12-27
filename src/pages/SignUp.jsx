@@ -9,7 +9,7 @@ const SignUp = () => {
 
   const handleSignUp = async () => {
     try {
-      const response = await fetch('https://taks-managment-backend.onrender.com/api/auth/signup', {
+      const response = await fetch('https://taks-managment-backend-1.onrender.com/api/auth/signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

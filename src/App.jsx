@@ -12,6 +12,9 @@ import Chat from "./components/Chat";
 import AuditPage from "./pages/AuditPage";
 import Team from "./components/Team";
 import SignUp from "./pages/SignUp";
+import UsersList from "./components/Admin/ManageUser";
+
+import FeedbackList from "./components/Admin/GetFeedback"
 
 export const App = () => {
   return (
@@ -28,6 +31,9 @@ export const App = () => {
         <Route path="/chat" element={<Chat />} /> {/* Add Chat Route */}
         <Route path="/audit" element={<AuditPage />} /> 
         <Route path="/teams" element={<Team />} />
+        <Route path="/manage-user" element={<UsersList />} />
+        <Route path="/Feedback-manage" element={<FeedbackList />} />
+       
       </Routes>
     </Router>
   );

@@ -12,7 +12,7 @@ const Login = () => {
   const handleLogin = async () => {
     try {
       const response = await fetch(
-        "https://taks-managment-backend.onrender.com/api/auth/login",
+        "https://taks-managment-backend-1.onrender.com/api/auth/login",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
