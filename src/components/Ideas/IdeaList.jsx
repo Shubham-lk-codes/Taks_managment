@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -22,6 +20,13 @@ const IdeaList = () => {
 
     fetchIdeas();
   }, []);
+
+  const handleVote = (id) => {
+    // Update the votes locally without making an API request
+    setIdeas(ideas.map((idea) =>
+      idea._id === id ? { ...idea, votes: (idea.votes || 0) + 1 } : idea
+    ));
+  };
 
   if (loading) {
     return (
@@ -62,6 +67,7 @@ const IdeaList = () => {
               <div className="flex items-center space-x-4">
                 <span className="text-gray-600">Votes: {idea.votes || 0}</span>
                 <button
+                  onClick={() => handleVote(idea._id)}
                   className="bg-blue-500 text-white px-4 py-1 rounded-lg hover:bg-blue-600"
                 >
                   Vote

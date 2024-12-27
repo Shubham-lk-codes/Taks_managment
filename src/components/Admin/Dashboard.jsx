@@ -17,7 +17,7 @@ const AdminDashboard = () => {
         {/* Manage Users Section */}
         <div className="bg-white p-6 shadow-md rounded-lg">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Manage Users</h2>
-          <p className="text-gray-600 mb-4">Add, edit, or remove users and manage roles.</p>
+          <p className="text-gray-600 mb-4"> Remove users </p>
           <Link
             to="/manage-user"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition duration-300"
@@ -29,7 +29,7 @@ const AdminDashboard = () => {
         {/* Manage Ideas Section */}
         <div className="bg-white p-6 shadow-md rounded-lg">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Manage Ideas</h2>
-          <p className="text-gray-600 mb-4">Review and approve or reject ideas submitted by employees.</p>
+          <p className="text-gray-600 mb-4">Review  ideas submitted by employees.</p>
           <Link
             to="/ideas"
             className="inline-block bg-green-600 hover:bg-green-700 text-white font-medium py-2 px-4 rounded-md transition duration-300"
@@ -62,17 +62,7 @@ const AdminDashboard = () => {
           </Link>
         </div>
 
-        {/* System Settings Section */}
-        <div className="bg-white p-6 shadow-md rounded-lg">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">System Settings</h2>
-          <p className="text-gray-600 mb-4">Configure system preferences and security settings.</p>
-          <Link
-            to="/admin/settings"
-            className="inline-block bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-md transition duration-300"
-          >
-            System Settings
-          </Link>
-        </div>
+        
       </main>
     </div>
   );

@@ -27,7 +27,7 @@ const UsersList = () => {
   const handleRemoveUser = async (userId) => {
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:4000/api/auth/users/${userId}`, {
+      await axios.delete(`https://taks-managment-backend-1.onrender.com/api/auth/users/${userId}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
